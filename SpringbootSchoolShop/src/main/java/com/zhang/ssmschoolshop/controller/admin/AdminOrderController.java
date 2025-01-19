@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -74,6 +75,9 @@ public class AdminOrderController {
             //查询地址
             Address address = orderService.getAddressByKey(order.getAddressid());
             order.setAddress(address);
+
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            order.setOrdertimeStr(sdf.format(order.getOrdertime()));
 
             orderList.set(i, order);
         }
@@ -144,6 +148,9 @@ public class AdminOrderController {
             Address address = orderService.getAddressByKey(order.getAddressid());
             order.setAddress(address);
 
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            order.setOrdertimeStr(sdf.format(order.getOrdertime()));
+
             orderList.set(i, order);
         }
 
@@ -198,6 +205,9 @@ public class AdminOrderController {
             //查询地址
             Address address = orderService.getAddressByKey(order.getAddressid());
             order.setAddress(address);
+
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            order.setOrdertimeStr(sdf.format(order.getOrdertime()));
 
             orderList.set(i, order);
         }

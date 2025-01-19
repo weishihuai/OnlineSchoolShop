@@ -18,11 +18,14 @@
             font-family: 'Open Sans', sans-serif;
             height: 100vh;
             margin: 0;
+            display: flex;
+            justify-content: center; /* 横向居中 */
+            align-items: center; /* 纵向居中 */
         }
 
         .templatemo-content-widget {
             max-width: 400px;
-            margin: 0 auto;
+            width: 100%;
             padding: 30px;
             background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
             border-radius: 10px;
@@ -48,7 +51,7 @@
         }
 
         .templatemo-blue-button {
-            background-color: #5bc0de;
+            background-color: #39ADB4;
             border: none;
             font-size: 16px;
             width: 100%;

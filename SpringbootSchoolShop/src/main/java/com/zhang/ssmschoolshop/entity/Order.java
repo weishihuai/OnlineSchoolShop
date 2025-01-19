@@ -10,6 +10,8 @@ public class Order {
 
     private Date ordertime;
 
+    private String ordertimeStr;
+
     private Float oldprice;
 
     private Float newprice;
@@ -140,5 +142,13 @@ public class Order {
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public String getOrdertimeStr() {
+        return ordertimeStr;
+    }
+
+    public void setOrdertimeStr(String ordertimeStr) {
+        this.ordertimeStr = ordertimeStr;
     }
 }

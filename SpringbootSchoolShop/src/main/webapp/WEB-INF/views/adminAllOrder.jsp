@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>后台管理</title>
+    <title>简购商城后台管理系统</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
     <!--
@@ -92,7 +92,7 @@
                                                     <td>${orderInfo.address.conname}</td>
                                                     <td>${orderInfo.address.province} ${orderInfo.address.city} ${orderInfo.address.county} ${orderInfo.address.detailaddr}</td>
                                                     <td>${orderInfo.address.contel}</td>
-                                                    <td>${orderInfo.ordertime}</td>
+                                                    <td>${orderInfo.ordertimeStr}</td>
                                                 </tr>
 
                                                 </tbody>

@@ -1,9 +1,8 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="templatemo-sidebar">
-    <header class="templatemo-site-header">
-        <div class="square"></div>
-        <h1>后台管理</h1>
+    <header class="templatemo-site-header" style="font-size: 1.0em">
+        <h1>简购商城后台管理系统</h1>
     </header>
     <div class="mobile-menu-icon">
         <i class="fa fa-bars"></i>
