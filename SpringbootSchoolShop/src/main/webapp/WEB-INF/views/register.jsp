@@ -1,9 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: zhangxin
-  Date: 2019/5/13
-  Time: 15:45
---%>
+
 <%@page import="java.security.interfaces.RSAKey"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%request.setCharacterEncoding("utf-8");%>
@@ -15,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>长理商城-个人注册</title>
+    <title>简购商城-个人注册</title>
     <script src="${pageContext.request.contextPath}/js/jquery.js"></script>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/login.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css">
