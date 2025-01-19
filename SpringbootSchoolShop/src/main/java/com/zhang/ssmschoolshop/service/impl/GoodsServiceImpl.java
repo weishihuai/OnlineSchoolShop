@@ -5,6 +5,7 @@ import com.zhang.ssmschoolshop.dao.FavoriteMapper;
 import com.zhang.ssmschoolshop.dao.GoodsMapper;
 import com.zhang.ssmschoolshop.dao.ImagePathMapper;
 import com.zhang.ssmschoolshop.entity.*;
+import com.zhang.ssmschoolshop.service.CateService;
 import com.zhang.ssmschoolshop.service.GoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,8 +24,13 @@ public class GoodsServiceImpl implements GoodsService {
     @Autowired(required = false)
     FavoriteMapper favoriteMapper;
 
+    @Autowired(required = false)
+    CateService cateService;
+
     @Override
     public Integer addGoods(Goods goods) {
+        Category category = cateService.selectById(goods.getCategory());
+        goods.setDetailcate(category.getCatename());
         goodsMapper.insertSelective(goods);
         return goods.getGoodsid();
     }
